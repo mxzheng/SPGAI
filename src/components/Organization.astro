@@ -95,20 +95,7 @@ const programCommittee: Person[] = [
           <div class="grid md:grid-cols-2 gap-4">
             {programCommittee.map((person) => (
               <div class="bg-gray-50 p-4 rounded-lg hover:shadow-sm transition-shadow duration-300">
-                <h4 class="font-medium text-secondary-800">
-                  {person.link ? (
-                    
-                      href={person.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="text-primary-600 hover:underline"
-                    >
-                      {person.name}
-                    </a>
-                  ) : (
-                    person.name
-                  )}
-                </h4>
+                <h4 class="font-medium text-secondary-800">{person.name}</h4>
                 <p class="text-sm text-gray-600">{person.affiliation}</p>
               </div>
             ))}
