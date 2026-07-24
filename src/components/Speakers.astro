@@ -24,7 +24,7 @@ const keynotes = [
   {
     name: "Qiaoyan Yu",
     photo: qiaoyanYu,
-    fit: "object-[50%_20%]",
+    fit: "object-top",
     position:
       "Program Director, NSF CISE; Professor, University of New Hampshire",
     title:
@@ -43,7 +43,7 @@ const keynotes = [
   {
     name: "Danella Zhao",
     photo: danella,
-  fit: "object-[50%_20%]",
+  fit: "object-top",
     position:
       "Associate Professor of Electrical and Computer Engineering, University of Arizona",
     title: "Making Private AI Practical at the Edge",
@@ -53,7 +53,7 @@ const keynotes = [
   {
     name: "Farimah Farahmandi",
     photo: farahmandi,
-    fit: "object-[50%_20%]",
+    fit: "object-top",
     position:
       "Walden Rhines Endowed Professor, Department of Electrical and Computer Engineering, University of Florida",
     title:
@@ -85,7 +85,7 @@ const talks = [
   {
     name: "Weidong Cao",
     photo: weidong,
-   fit: "object-[50%_20%]",
+   fit: "object-top",
     position:
       "Assistant Professor of Electrical and Computer Engineering, George Washington University",
     title: "Trustworthy Electronic Design Automation with Generative AI",
@@ -95,7 +95,7 @@ const talks = [
   {
     name: "Minxuan Zhou",
     photo: minxuan,
-    fit: "object-[50%_20%]",
+     fit: "object-top",
     position:
       "Assistant Professor of Computer Science, Illinois Institute of Technology",
     title:
@@ -139,7 +139,7 @@ const talks = [
               <img
                 src={s.photo.src}
                 alt={s.name}
-                class="w-32 h-32 sm:w-36 sm:h-36 mx-auto sm:mx-0 rounded-lg object-cover shadow-md"
+          class={`w-32 h-32 sm:w-36 sm:h-36 mx-auto sm:mx-0 rounded-lg object-cover shadow-md ${s.fit ?? "object-center"}`}
               />
             </div>
             <div class="flex-1">
