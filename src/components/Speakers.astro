@@ -89,16 +89,6 @@ const talks = [
       "Generative AI (GenAI), such as large language models (LLMs), is reshaping electronic design automation (EDA) by accelerating hardware code generation, design-space exploration, and circuit discovery. However, its deployment in real-world EDA raises a fundamental question: how can we build AI-driven design tools that are not only powerful, but also trustworthy? This talk addresses this question through two complementary directions: reliable LLM-assisted digital hardware design and privacy-preserving GenAI for analog circuit design. First, I will discuss how LLMs can be made safer for RTL code generation by mitigating memorization of proprietary IP, benchmark contamination, and unsafe coding behaviors. I will present a syntax-preserving unlearning framework that selectively removes problematic knowledge while maintaining the structural and functional integrity of generated hardware code. Second, I will introduce AnalogFed, a federated GenAI framework for large-scale analog circuit topology discovery. AnalogFed enables collaborative model training across distributed, siloed hardware datasets while protecting confidentiality against membership inference and model inversion attacks through dummy-token perturbation and efficient homomorphic encryption. Together, these works highlight a broader vision for trustworthy EDA with generative AI: models that can learn from valuable hardware knowledge without exposing proprietary data, generate useful designs without reproducing protected IP, and support scalable collaboration across institutions and companies.",
   },
   {
-    name: "Meng Li",
-    photo: mengLi,
-    position:
-      "Boya Young Fellow Assistant Professor, School of Integrated Circuits and Institute for Artificial Intelligence, Peking University",
-    title:
-      "Efficient Private Transformer Inference through Algorithm/Protocol/Hardware Co-Design",
-    abstract:
-      "The last decade has witnessed the fast evolution of AI driven by the explosive growth of data. However, it also poses serious risks of data misuse and leakage. Privacy-preserving AI (PPAI) based on cryptographic primitives, e.g., secure multi-party computation, homomorphic encryption, etc., emerges as a novel computation paradigm that enables AI computation while providing formal data privacy protection, attracting increasing attention from both industry and academia. However, existing PPAI frameworks often suffer from significant computation and communication cost, especially for advanced Transformer models, which poses a serious barrier to real-world deployment. In this talk, I will introduce our recent works on cross-layer co-optimizations of Transformer models, PPAI protocols, and accelerator architectures to enhance the efficiency of private Transformer inference.",
-  },
-  {
     name: "Minxuan Zhou",
     photo: minxuan,
     position:
@@ -107,6 +97,16 @@ const talks = [
       "Hardware Acceleration with Compiler Optimizations for Fully Homomorphic Encryption",
     abstract:
       "Fully homomorphic encryption (FHE) is crucial for post-quantum privacy-preserving computing. This talk will first introduce recent FHE accelerators that leverage hardware innovations, algorithmic adaptations, and compiler-level optimizations to achieve significant performance and energy-efficiency gains for various performance-critical FHE applications (e.g., privacy-preserving machine learning).",
+  },
+  {
+    name: "Meng Li",
+    photo: mengLi,
+    position:
+      "Boya Young Fellow Assistant Professor, School of Integrated Circuits and Institute for Artificial Intelligence, Peking University",
+    title:
+      "Efficient Private Transformer Inference through Algorithm/Protocol/Hardware Co-Design",
+    abstract:
+      "The last decade has witnessed the fast evolution of AI driven by the explosive growth of data. However, it also poses serious risks of data misuse and leakage. Privacy-preserving AI (PPAI) based on cryptographic primitives, e.g., secure multi-party computation, homomorphic encryption, etc., emerges as a novel computation paradigm that enables AI computation while providing formal data privacy protection, attracting increasing attention from both industry and academia. However, existing PPAI frameworks often suffer from significant computation and communication cost, especially for advanced Transformer models, which poses a serious barrier to real-world deployment. In this talk, I will introduce our recent works on cross-layer co-optimizations of Transformer models, PPAI protocols, and accelerator architectures to enhance the efficiency of private Transformer inference.",
   },
   {
     name: "Sazadur Rahman",
@@ -152,7 +152,7 @@ const talks = [
       </div>
 
       <h2 class="text-2xl md:text-3xl font-bold text-center mt-16 mb-2 text-primary-800">
-        Research Talks
+        Distinguished Speakers
       </h2>
       <p class="text-sm text-gray-500 italic mb-8">Listed in order of presentation time.</p>
 
